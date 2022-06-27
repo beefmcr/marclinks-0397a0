@@ -3712,6 +3712,10 @@ figcaption {
     border-bottom-style: none;
   }
 
+  .profile.background-color-white {
+    background-color: transparent;
+  }
+
   .div-block {
     display: inline-block;
     -webkit-box-orient: vertical;
@@ -3893,6 +3897,7 @@ figcaption {
   .profile.background-color-white {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+    background-color: transparent;
   }
 
   .div-block {
