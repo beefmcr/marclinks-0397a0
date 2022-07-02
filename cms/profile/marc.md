@@ -7,16 +7,16 @@ title: Marc
 f_phone: '+447901141897'
 f_profile:
   url: >-
-    https://uploads-ssl.webflow.com/62b9bad18d801b15534c718d/62b9c1a10cb3a1b4ce74cb47_2837108202177485121.jpg
+    https://uploads-ssl.webflow.com/62b9bad18d801b15534c718d/62b9f8bc50c1ff90431e4b26_2864242720636839604.jpg
   alt: null
 slug: marc
 f_cover:
   url: >-
     https://uploads-ssl.webflow.com/62b9bad18d801b15534c718d/62b9c1b7da63d6636a55b023_3%20-%20Skewed%20right.png
   alt: null
-updated-on: '2022-06-27T16:22:37.175Z'
+updated-on: '2022-06-27T18:36:47.178Z'
 created-on: '2022-06-27T14:42:45.528Z'
-published-on: '2022-06-27T15:28:29.971Z'
+published-on: '2022-06-27T20:19:32.940Z'
 layout: '[profile].html'
 tags: profile
 ---
