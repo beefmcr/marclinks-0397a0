@@ -4,7 +4,7 @@ f_featured: true
 f_colour: hsla(212, 100.00%, 86.38%, 1.00)
 title: Onlyfans
 slug: onlyfans
-updated-on: '2022-06-27T20:25:14.627Z'
+updated-on: '2022-07-02T04:36:54.990Z'
 created-on: '2022-06-27T14:19:19.551Z'
 published-on: '2022-06-27T20:32:01.288Z'
 f_link-icon-2: cms/icons/link.md
@@ -35,6 +35,8 @@ f_svg-icon-code-2: >
   2.17164 14.829 2.17164C16.6856 2.17164 18.4662 2.90918 19.779 4.222C21.0918
   5.53482 21.8294 7.31539 21.8294 9.172C21.8294 11.0286 21.0918 12.8092 19.779
   14.122L19.778 14.121Z
+f_announcement-on: true
+f_announcement: 50% OFF IN JULY
 layout: '[links].html'
 tags: links
 ---

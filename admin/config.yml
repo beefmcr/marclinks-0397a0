@@ -298,6 +298,16 @@ collections:
         label: SVG Icon Code
         widget: text
         required: false
+      - hint: ''
+        name: f_announcement-on
+        label: Announcement On
+        widget: boolean
+        required: false
+      - hint: ''
+        name: f_announcement
+        label: Announcement
+        widget: string
+        required: false
       - label: Tags
         widget: hidden
         name: tags
@@ -1405,6 +1415,45 @@ collections:
                 required: false
           - label: Image
             name: 317f733b
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: ca18747
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 4b5242ee
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 84efe4c
             widget: object
             fields:
               - name: url

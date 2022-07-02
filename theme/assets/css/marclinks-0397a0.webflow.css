@@ -1,3 +1,14 @@
+.w-backgroundvideo-backgroundvideoplaypausebutton:focus-visible {
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  outline-color: #3b79c3;
+}
+
 .w-layout-grid {
   display: -ms-grid;
   display: grid;
@@ -2834,19 +2845,19 @@ figcaption {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  border-style: solid;
+  border-style: none;
   border-width: 1px;
   border-color: #333;
   border-radius: 8px;
   background-color: transparent;
-  box-shadow: 3px 3px 0 0 #333;
+  box-shadow: 4px 4px 0 0 #fff;
   -webkit-transition: all 375ms ease;
   transition: all 375ms ease;
 }
 
 .cta38_link-block:hover {
   background-color: #a2f6ea;
-  box-shadow: 13px 13px 0 0 #333;
+  box-shadow: 11px 11px 0 0 #79b4ac;
 }
 
 .cta38_instructions-callout-image {
@@ -3381,7 +3392,7 @@ figcaption {
   bottom: 0%;
 }
 
-.background-video-2 {
+.video {
   position: absolute;
   left: 0%;
   top: 0%;
@@ -3389,12 +3400,19 @@ figcaption {
   bottom: 0%;
   z-index: auto;
   overflow: hidden;
+  min-height: 100vh;
+  margin-top: 0px;
+  padding-top: 0px;
   background-image: linear-gradient(354deg, #333 24%, hsla(0, 0%, 100%, 0)), var(--image-1c0fdba3);
   background-position: 0px 0px, 0px 0px;
 }
 
 .body {
   background-color: #333;
+}
+
+.image-2 {
+  display: none;
 }
 
 @media screen and (max-width: 991px) {
@@ -3626,6 +3644,21 @@ figcaption {
     background-image: var(--image-6d4855a7);
     background-position: 50% 100%;
     background-size: auto;
+  }
+
+  .collection-item:first-child {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #79b4ac;
+  }
+
+  .image-2 {
+    position: relative;
+    left: 0%;
+    top: -41px;
+    right: auto;
+    bottom: 0%;
+    display: block;
   }
 }
 
@@ -3895,10 +3928,6 @@ figcaption {
     padding-bottom: 1.25rem;
   }
 
-  .cta38_link-block:hover {
-    box-shadow: 14px 14px 0 0 #333;
-  }
-
   .cta38_link-text {
     position: relative;
     font-size: 2.25rem;
@@ -4076,6 +4105,10 @@ figcaption {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
+  }
+
+  .image-2 {
+    position: static;
   }
 }
 
@@ -4288,6 +4321,13 @@ figcaption {
     border-top-style: none;
   }
 
+  .collection-list-wrapper {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
   .html-embed-2:hover {
     background-color: transparent;
     color: #73ffea;
@@ -4339,7 +4379,7 @@ figcaption {
     align-items: center;
   }
 
-  .background-video-2 {
+  .video {
     bottom: 7%;
     min-height: 100vh;
     background-image: linear-gradient(354deg, #333 29%, hsla(0, 0%, 100%, 0)), var(--image-1c0fdba3);
