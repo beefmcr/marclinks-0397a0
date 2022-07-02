@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Profiles </title>
+    <description>Profiles  Feed</description>
+    <link></link>
+    <pubDate>Sat, 02 Jul 2022 07:29:58 GMT</pubDate>
+    <atom:link href="/profile/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title>Marc</title>
+            
+            <link>/profile/marc/</link>
+            <pubDate>Sat, 02 Jul 2022 07:29:58 GMT</pubDate>
+            <guid>/profile/marc/</guid>
+            
+            <content type="html"></content>
+            
+        </item>
+  </channel>
+</rss>
