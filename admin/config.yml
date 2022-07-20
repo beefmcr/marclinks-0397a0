@@ -3,14 +3,7 @@ backend:
   accept_roles:
     - admin
     - editor
-local_backend: true
 media_folder: theme/assets/images
-media_library:
-  name: uploadcare
-  config:
-    publicKey: a0882e594fa361e3fdc3
-  settings:
-    autoFilename: true
 public_folder: /assets/images
 collections:
   - name: pages
@@ -131,10 +124,6 @@ collections:
             label: alt
             widget: string
             required: false
-            media_library:
-              config:
-              multiple: true
-              previewStep: false
       - hint: ''
         name: f_cover
         label: Cover
@@ -1437,43 +1426,4 @@ collections:
                 label: Image Alt
                 widget: string
                 required: false
-          - label: Image
-            name: ca18747
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: 4b5242ee
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: 84efe4c
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-
+publish_mode: editorial_workflow
