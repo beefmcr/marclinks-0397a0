@@ -3449,6 +3449,13 @@ figcaption {
   background-size: auto, auto;
 }
 
+.html-embed-4 {
+  font-size: 3.5rem;
+  font-style: italic;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
 @media screen and (max-width: 991px) {
   h1 {
     font-size: 3.25rem;

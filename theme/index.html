@@ -86,9 +86,8 @@
                   {%- assign collection = collections.links | sort: "-f_featured" -%}<div class="w-dyn-list">
                     {%- unless collection.length == 0 -%}<div role="list" class="w-dyn-items">
                       {%- for item in collection -%}<div data-w-id="b0818e7d-a19e-be69-5b2e-17a98082ca02" style="opacity:0" role="listitem" class="collection-item w-dyn-item">
-                        <a href="{{ item.data.f_url }}" class="cta38_link-block w-inline-block">
-                          <h3 class="cta38_link-text">{{ item.data.title }}</h3>
-                        </a>
+                        <div class="html-embed-4 w-embed w-script"><a href="{{ item.data.f_url }}" class="cta38_link-block" onclick="fathom.trackGoal('{{ item.data.f_tracking-id }}', 0);">{{ item.data.title }}</a>
+<script>window.fathom.trackGoal('{{ item.data.f_tracking-id }}', 0);</script></div>
                       </div>{%- endfor -%}
                     </div>{%- endunless -%}
                     {%- if collection.length == 0 -%}<div class="w-dyn-empty">

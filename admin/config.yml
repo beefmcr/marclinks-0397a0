@@ -308,6 +308,11 @@ collections:
         label: Announcement
         widget: string
         required: false
+      - hint: ''
+        name: f_tracking-id
+        label: Tracking ID
+        widget: string
+        required: false
       - label: Tags
         widget: hidden
         name: tags
