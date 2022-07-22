@@ -3714,6 +3714,10 @@ figcaption {
     bottom: 0%;
     display: block;
   }
+
+  .html-embed-4 {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -4456,6 +4460,10 @@ figcaption {
     min-height: 100vh;
     -o-object-fit: fill;
     object-fit: fill;
+  }
+
+  .html-embed-4 {
+    font-size: 1rem;
   }
 }
 
