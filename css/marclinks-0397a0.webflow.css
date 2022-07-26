@@ -79,7 +79,7 @@
   border-bottom-color: #3898ec;
   border-left-color: #3898ec;
   border-right-color: #3898ec;
-  background-image: var(--image-i5cec3e91);
+  background-image: url('https://d3e54v103j8qbb.cloudfront.net/static/custom-checkbox-checkmark.589d534424.svg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2839,6 +2839,7 @@ figcaption {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
+  margin-bottom: 20px;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   padding-left: 40px;
@@ -2858,6 +2859,9 @@ figcaption {
   box-shadow: 4px 4px 0 0 #ffbfe1;
   -webkit-transition: all 375ms ease;
   transition: all 375ms ease;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .cta38_link-block:hover {
@@ -3071,7 +3075,7 @@ figcaption {
   -ms-flex-pack: end;
   justify-content: flex-end;
   border-radius: 0px;
-  background-image: var(--image-i39ab5db6);
+  background-image: url('../images/Layer_2-2.png');
   background-position: 0px 0px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -3258,7 +3262,7 @@ figcaption {
 .overage-butt.button {
   border-radius: 9px;
   background-color: #ff6d6d;
-  background-image: var(--image-6d4855a7);
+  background-image: url('../images/3---Skewed-right.png');
   background-position: 100% 100%;
   background-size: 960px;
   box-shadow: 1px 1px 0 0 #333;
@@ -3445,7 +3449,7 @@ figcaption {
 
 .body {
   background-color: #333;
-  background-image: var(--image-1c0fdba3), var(--image-6970c79);
+  background-image: url('../images/noise_1noise_1noise_1noise.png'), url('../images/wesley-tingey-9-OCsKoyQlk-unsplash-1.png');
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
 }
@@ -3474,7 +3478,7 @@ figcaption {
   right: 0%;
   bottom: 0%;
   min-height: 100vh;
-  background-image: var(--image-1c0fdba3), linear-gradient(354deg, #333 57%, hsla(0, 0%, 100%, 0));
+  background-image: url('../images/noise_1noise_1noise_1noise.png'), linear-gradient(354deg, #333 57%, hsla(0, 0%, 100%, 0));
   background-position: 0px 0px, 0px 0px;
   background-size: auto, auto;
 }
@@ -3484,6 +3488,10 @@ figcaption {
   font-style: italic;
   font-weight: 800;
   text-transform: uppercase;
+}
+
+.list {
+  list-style-type: none;
 }
 
 @media screen and (max-width: 991px) {
@@ -3731,7 +3739,7 @@ figcaption {
   }
 
   .color-block.background-color-white {
-    background-image: var(--image-6d4855a7);
+    background-image: url('../images/3---Skewed-right.png');
     background-position: 50% 100%;
     background-size: auto;
   }
@@ -4349,7 +4357,7 @@ figcaption {
     height: 200px;
     border-style: none;
     border-radius: 100%;
-    background-image: var(--image-7b40fadb);
+    background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -4389,7 +4397,7 @@ figcaption {
   }
 
   .cover.img {
-    background-image: var(--image-7b40fadb);
+    background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
     background-position: 0% 50%;
     background-size: 125px;
     -o-object-fit: none;
@@ -4418,7 +4426,7 @@ figcaption {
   }
 
   .profile-pic {
-    background-image: var(--image-7b40fadb);
+    background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
     background-position: 0% 100%;
     background-attachment: scroll;
     -o-object-fit: cover;
