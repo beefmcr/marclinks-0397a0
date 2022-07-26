@@ -3494,6 +3494,31 @@ figcaption {
   list-style-type: none;
 }
 
+.list-item {
+  color: #fdff9f;
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: 900;
+  text-align: right;
+}
+
+.list-2 {
+  list-style-type: none;
+}
+
+.list-item-copy {
+  color: #fdff9f;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 600;
+  text-align: right;
+}
+
+.text-block-3 {
+  font-style: italic;
+  font-weight: 900;
+}
+
 @media screen and (max-width: 991px) {
   h1 {
     font-size: 3.25rem;
@@ -4219,6 +4244,14 @@ figcaption {
   .image-2 {
     position: static;
   }
+
+  .list-item-copy {
+    font-size: 1rem;
+  }
+
+  .text-block-3 {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -4232,6 +4265,42 @@ figcaption {
 
   .hide-mobile-portrait {
     display: none;
+  }
+
+  .page-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .page-padding {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
   }
 
   .margin-top {
@@ -4324,9 +4393,7 @@ figcaption {
   }
 
   .cta38_link-block {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 20px;
+    padding: 0.5rem 20px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -4515,6 +4582,46 @@ figcaption {
 
   .html-embed-4 {
     font-size: 1rem;
+  }
+
+  .list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .list-item {
+    font-size: 2rem;
+  }
+
+  .text-block-3 {
+    font-size: 1rem;
+  }
+
+  .list-item-2 {
+    padding-left: 0rem;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  .div-block-4 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 
