@@ -1315,6 +1315,19 @@ collections:
             widget: hidden
             default: Images
           - label: Image
+            name: i39ab5db6
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
             name: 6d4855a7
             widget: object
             fields:
@@ -1329,6 +1342,19 @@ collections:
                 required: false
           - label: Image
             name: 1c0fdba3
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 6970c79
             widget: object
             fields:
               - name: url

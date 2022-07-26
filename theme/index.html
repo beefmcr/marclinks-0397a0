@@ -26,14 +26,7 @@
             aspect-ratio: 16 / 9;
         }</style></head>
 <body class="body">
-  <div class="bg-video-wraper">
-    <div data-poster-url="/assets/videos/20220702-032537-056-poster-00001.jpg" data-video-urls="videos/20220702-032537-056-transcode.mp4,videos/20220702-032537-056-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" id="video" class="video w-background-video w-background-video-atom"><video id="9ef765aa-741f-699d-a973-9b205433efca-video" autoplay="" loop="" style="background-image:url(&quot;videos/20220702-032537-056-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
-        <source src="/assets/videos/20220702-032537-056-transcode.mp4" data-wf-ignore="true">
-        <source src="/assets/videos/20220702-032537-056-transcode.webm" data-wf-ignore="true">
-      </video></div>
-    <div class="video-overlay"></div>
-  </div>
-  <div class="page-wrapper">
+  <div data-w-id="d24e5ea8-78da-f5b7-6dab-ac39945b55b0" style="background-color:rgba(0,0,0,0)" class="page-wrapper">
     {%- include "partials/global-styles" -%}
     <main class="main-wrapper">
       <header class="section-cta38 background-image-bananaa">
@@ -50,8 +43,9 @@
                           <div class="profile background-color-white">
                             <div class="c-4">
                               <div class="user info padding-small margin-top margin-tiny">
+                                <div class="margin-vertical margin-medium show-mobile-portrait"></div>
                                 <h1 class="heading-xlarge">{{ item.data.title }}</h1>
-                                <h2 class="heading-xsmall text-style-allcaps">{{ item.data.f_bio }}</h2>
+                                <h2 class="heading-xsmall text-style-allcaps text-color-yellow">{{ item.data.f_bio }}</h2>
                                 <div class="user contact padding-tiny">
                                   <div class="rl-styleguide_button-row">
                                     {%- if item.data.f_twitter -%}<a href="{{ item.data.f_twitter }}" class="icon-1x1-small w-inline-block">
