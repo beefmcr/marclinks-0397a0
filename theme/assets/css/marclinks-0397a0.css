@@ -3980,7 +3980,7 @@ figcaption {
   margin-left: 12px;
   padding: 6px;
   border-radius: 0px;
-  background-color: #fdff9f;
+  background-color: transparent;
   color: #333;
   line-height: 1;
   font-style: italic;
@@ -4084,7 +4084,10 @@ figcaption {
 }
 
 .text-block-5 {
-  display: inline-block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   background-color: transparent;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   color: #fdff9f;
@@ -4120,7 +4123,7 @@ figcaption {
   -ms-flex-pack: center;
   justify-content: center;
   border-radius: 0px;
-  background-color: #9fffad;
+  background-color: #fdff9f;
   color: #333;
   font-weight: 600;
   text-align: center;
@@ -4225,6 +4228,7 @@ figcaption {
 .footerinfo.text-block-5.small.textblock {
   margin-bottom: 0rem;
   border-radius: 0px;
+  background-color: #fdff9f;
   font-weight: 500;
   text-align: center;
 }
@@ -4265,6 +4269,10 @@ figcaption {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-transform: skew(-13deg, 0deg);
+  -ms-transform: skew(-13deg, 0deg);
+  transform: skew(-13deg, 0deg);
+  font-style: italic;
 }
 
 .image-4 {
@@ -4286,6 +4294,55 @@ figcaption {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.link-block {
+  text-decoration: none;
+}
+
+.link-block.heading.color-changer {
+  position: relative;
+  background-color: transparent;
+  color: #333;
+  font-style: italic;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.heading {
+  font-size: 6.666666666666667rem;
+  line-height: 6.11rem;
+  font-weight: 500;
+}
+
+.heading.color-changer {
+  color: #222;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.background-color {
+  position: relative;
+  background-color: #fff;
+  font-style: italic;
+}
+
+.color-changing {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 0;
+  background-color: #fdff9f;
+}
+
+.collection-list-2 {
+  font-style: italic;
+}
+
+.collection-list-wrapper-3 {
+  font-style: italic;
 }
 
 @media screen and (max-width: 991px) {
@@ -4609,6 +4666,14 @@ figcaption {
     font-size: 3.25rem;
   }
 
+  .section-team12 {
+    background-position: 50% 0%;
+  }
+
+  .social-link {
+    background-color: transparent;
+  }
+
   .team12_list {
     grid-column-gap: 2rem;
     -ms-grid-columns: 1fr;
@@ -4646,6 +4711,18 @@ figcaption {
     padding-top: 27px;
     padding-bottom: 27px;
     background-color: #fdff9f;
+  }
+
+  .collection-item-4 {
+    font-weight: 700;
+  }
+
+  .heading {
+    font-size: 9vw;
+  }
+
+  .heading.color-changer {
+    line-height: 1;
   }
 }
 
@@ -5635,6 +5712,11 @@ figcaption {
 
   .container-large-2 {
     max-width: none;
+  }
+
+  .section-team12 {
+    background-position: 50% 0%;
+    background-size: 200px;
   }
 
   .team12_image {

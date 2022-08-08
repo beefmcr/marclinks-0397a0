@@ -260,6 +260,27 @@ collections:
             label: alt
             widget: string
             required: false
+      - hint: ''
+        name: f_text-colour
+        label: Text Colour
+        widget: color
+        required: false
+        enableAlpha: true
+        allowInput: true
+      - hint: ''
+        name: f_main-colour
+        label: Main Colour
+        widget: color
+        required: false
+        enableAlpha: true
+        allowInput: true
+      - hint: ''
+        name: f_alternative-colour
+        label: Alternative Colour
+        widget: color
+        required: false
+        enableAlpha: true
+        allowInput: true
       - label: Tags
         widget: hidden
         name: tags

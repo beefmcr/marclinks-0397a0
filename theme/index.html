@@ -51,10 +51,10 @@
                     {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
                       <div class="team12_item">
                         <div class="margin-bottom margin-small">
-                          <div class="text-block-5">{{ item.data.title }}</div>
-                        </div><img src="{{ item.data.f_profile.url }}" loading="lazy" width="464" alt="{{ item.data.f_profile.alt }}" class="image-4">
+                          <div class="text-block-5" style="color: {{item.data.f_main-colour}};">{{ item.data.title }}</div>
+                        </div><img src="{{ item.data.f_profile.url }}" loading="lazy" width="464" alt="{{ item.data.f_profile.alt }}" class="image-4" style="border-color: {{item.data.f_alternative-colour}};">
                         <div class="margin-bottom margin-xsmall">
-                          <div class="w-layout-grid team12_social">
+                          <div class="w-layout-grid team12_social" style="background-color: {{item.data.f_main-colour}};">
                             <a href="{{ item.data.f_twitter }}" class="social-link w-inline-block">
                               <div class="icon-1x1-small w-embed"><svg width="auto" height="auto" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                                   <path d="M98.5107 20.5707C95.0315 22.1124 91.294 23.1541 87.3648 23.6249C91.419 21.199 94.4521 17.381 95.8982 12.8832C92.0892 15.1457 87.9205 16.7382 83.5732 17.5916C80.6498 14.4702 76.7776 12.4013 72.5579 11.7061C68.3381 11.0108 64.0069 11.7282 60.2367 13.7468C56.4664 15.7654 53.4681 18.9723 51.7072 22.8695C49.9462 26.7668 49.5212 31.1364 50.4982 35.2999C42.7802 34.9124 35.23 32.9064 28.3374 29.412C21.4449 25.9177 15.3642 21.0131 10.4898 15.0166C8.82318 17.8916 7.86484 21.2249 7.86484 24.7749C7.86298 27.9707 8.64998 31.1176 10.156 33.9363C11.662 36.755 13.8405 39.1584 16.4982 40.9332C13.416 40.8352 10.4018 40.0023 7.70651 38.5041V38.7541C7.7062 43.2363 9.25665 47.5807 12.0948 51.0499C14.9329 54.5191 18.8839 56.8996 23.2773 57.7874C20.4181 58.5612 17.4204 58.6752 14.5107 58.1207C15.7502 61.9775 18.1648 65.35 21.4164 67.7663C24.6679 70.1825 28.5937 71.5215 32.644 71.5957C25.7683 76.9933 17.2769 79.9211 8.53568 79.9082C6.98726 79.9087 5.44016 79.8182 3.90234 79.6374C12.7752 85.3423 23.1038 88.37 33.6523 88.3582C69.3607 88.3582 88.8815 58.7832 88.8815 33.1332C88.8815 32.2999 88.8607 31.4582 88.8232 30.6249C92.6202 27.879 95.8978 24.4786 98.5023 20.5832L98.5107 20.5707V20.5707Z" fill="#333333"></path>
@@ -72,7 +72,7 @@
                             </a>
                           </div>
                         </div>
-                        <p data-w-id="3791a70f-253e-df1d-dad6-6a7e684e355e" class="text-block-5 small textblock">{{ item.data.f_bio }}</p>
+                        <p data-w-id="3791a70f-253e-df1d-dad6-6a7e684e355e" class="text-block-5 small textblock" style="background-color: {{item.data.f_alternative-colour}};">{{ item.data.f_bio }}</p>
                       </div>
                     </div>{%- endfor -%}
                   </div>{%- endunless -%}
@@ -90,11 +90,14 @@
           <div class="container-large-2">
             <div class="padding-vertical padding-small">
               <div class="cta38_component">
-                {%- assign collection = collections.links | sort: "-created-on" -%}<div class="w-dyn-list">
-                  {%- unless collection.length == 0 -%}<div role="list" class="w-dyn-items">
+                {%- assign collection = collections.links | sort: "-created-on" -%}<div class="collection-list-wrapper-3 w-dyn-list">
+                  {%- unless collection.length == 0 -%}<div role="list" class="collection-list-2 w-dyn-items">
                     {%- for item in collection -%}<div data-w-id="dfa0000d-6cef-db54-8f86-6587f6665cc2" style="opacity:0" role="listitem" class="collection-item-4 w-dyn-item">
-                      <div class="link-button w-embed w-script"><div class="html-embed-5 w-embed w-script"><div class="html-embed-4 w-embed w-script"><a href="{{ item.data.f_url }}" class="" onclick="fathom.trackGoal('{{ item.data.f_tracking-id }}', 0);">{{ item.data.title }}</a>
+                      <div class="background-color">
+                        <div style="width:100%;height:100%; background-color: {{item.data.f_colour}};" class="color-changing"></div>
+                        <div data-w-id="7608afb0-3816-e858-6ed1-93ae251184cb" class="link-block heading color-changer w-embed w-script" style="background-color: {{item.data.f_colour}};"><div class="Link Block"><div class="Link Block"><a href="{{ item.data.f_url }}" class="" onclick="fathom.trackGoal('{{ item.data.f_tracking-id }}', 0);">{{ item.data.title }}</a>
 <script>window.fathom.trackGoal('{{ item.data.f_tracking-id }}', 0);</script></div></div></div>
+                      </div>
                     </div>{%- endfor -%}
                   </div>{%- endunless -%}
                   {%- if collection.length == 0 -%}<div class="w-dyn-empty">
