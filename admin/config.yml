@@ -370,6 +370,33 @@ collections:
         label: Tracking ID
         widget: string
         required: false
+      - hint: ''
+        name: f_sticker
+        label: Sticker
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: ''
+        name: f_sticker-width
+        label: Sticker Width
+        widget: string
+        required: false
+      - hint: ''
+        name: f_sticker-height
+        label: Sticker Height
+        widget: string
+        required: false
       - label: Tags
         widget: hidden
         name: tags
@@ -493,6 +520,18 @@ collections:
           - hint: 'Original text: I am under 18, key: -2ab48774'
             label: Text
             name: '-2ab48774'
+            widget: string
+          - hint: 'Original text: twitter, key: -369e558d'
+            label: Text
+            name: '-369e558d'
+            widget: string
+          - hint: 'Original text: instagram, key: 1b907b2'
+            label: Text
+            name: 1b907b2
+            widget: string
+          - hint: 'Original text: EMAIL, key: 3f0537c'
+            label: Text
+            name: 3f0537c
             widget: string
           - hint: 'Original text: No items found., key: 3d503d2b'
             label: Text
@@ -1440,7 +1479,33 @@ collections:
                 widget: string
                 required: false
           - label: Image
+            name: i28336f13
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
             name: 6d4855a7
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-38b46f64'
             widget: object
             fields:
               - name: url
